@@ -13,8 +13,8 @@ require_once(MVC_PLUGIN_DIR . '/autoload.php');
 function mvc_shortcode ($atts)
 {
 	$controller = $atts['controller'];
-    $action = 'index';
-    
+    $action = (array_key_exists('action', $atts)) ? $atts['action'] : 'index';
+
     $c = new $controller();
     $v = $c->$action();
     $v->render();
