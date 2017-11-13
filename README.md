@@ -15,3 +15,11 @@ Make sure you add two slashes, action defaults to "index"
 ```
 [wpmvc controller="MVCSample\\Controller\\HomeController" action="sample"]
 ```
+
+## Planned Features
+
+Please feel free to request additions, or create a pull request if you think you can implement yourself
+
+- Composer support
+- Improve autoloader
+- Helper functions for getting data from $_GET and $_POST including sanitisation
